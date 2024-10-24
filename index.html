@@ -1,0 +1,66 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Domain for Sale</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            text-align: center;
+            padding: 50px;
+        }
+        h1 {
+            color: #333;
+            font-size: 2.5em;
+        }
+        p {
+            color: #555;
+            font-size: 1.2em;
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 1em;
+            color: #fff;
+            background-color: #007bff;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+        .button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+    <script>
+        function setDomainName() {
+            const params = new URLSearchParams(window.location.search);
+            const domainName = params.get('domain');
+            document.getElementById('domain-name').innerText = domainName;
+            document.getElementById('domain-name-email').innerText = domainName;
+        }
+    </script>
+</head>
+<body onload="setDomainName()">
+    <div class="container">
+        <h1>📢 Precious Domain for Sale: <span id="domain-name"></span></h1>
+        <p>Are you looking for a memorable and versatile domain name to elevate your online presence? <span id="domain-name"></span> is now available for purchase!</p>
+        <p><strong>Why <span id="domain-name"></span>?</strong></p>
+        <ul>
+            <li><strong>Memorable:</strong> Easy to remember and type.</li>
+            <li><strong>Versatile:</strong> Perfect for any industry or business.</li>
+            <li><strong>Search Engine Friendly:</strong> Ideal for boosting your online visibility.</li>
+        </ul>
+        <p><strong>Start Bidding Now!</strong></p>
+        <p><strong>Minimum Bid: 2050 GBP</strong></p>
+        <p>Bid Counts as on 19-OCT-2024 GMT 10:00 : 26</p>
+        <p>Contact us at <a href="mailto:Queries@Outlook.in">Queries@Outlook.in</a> to place your bid and inquire about the domain purchase. Don't miss out on this fantastic opportunity to own a prime piece of the internet!</p>
+        <a href="mailto:Queries@Outlook.in" class="button">Place Your Bid</a>
+    </div>
+</body>
+</html>
