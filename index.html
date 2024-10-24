@@ -39,8 +39,11 @@
     </style>
     <script>
         function setDomainName() {
-            const params = new URLSearchParams(window.location.search);
-            const domainName = params.get('domain');
+            // const params = new URLSearchParams(window.location.search);
+            // const domainName = params.get('domain');
+
+            const hostname = window.location.hostname;
+            const domainName = hostname.replace('www.', '');
 
             document.querySelectorAll('.domain-name').forEach(el => el.innerText = domainName);
 
