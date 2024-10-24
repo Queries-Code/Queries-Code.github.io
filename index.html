@@ -41,14 +41,17 @@
         function setDomainName() {
             const params = new URLSearchParams(window.location.search);
             const domainName = params.get('domain');
-            document.getElementById('domain-name').innerText = domainName;
-            document.getElementById('domain-name-email').innerText = domainName;
+
+            document.querySelectorAll('.domain-name').forEach(el => el.innerText = domainName);
+
+            // document.getElementById('domain-name').innerText = domainName;
+            // document.getElementById('domain-name-email').innerText = domainName;
         }
     </script>
 </head>
 <body onload="setDomainName()">
     <div class="container">
-        <h1>📢 Precious Domain for Sale: <span id="domain-name"></span></h1>
+        <h1>📢 Precious Domain for Sale: <span class="domain-name"></span></h1>
         <p>Are you looking for a memorable and versatile domain name to elevate your online presence? <span id="domain-name"></span> is now available for purchase!</p>
         <p><strong>Why <span id="domain-name"></span>?</strong></p>
         <ul>
